@@ -90,7 +90,7 @@
         </footer>
     </main>
 
-    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</button>
+    <button class="back-to-top" onclick="scrollTo();"></button>
 
     <script>
         function toggleDark() {
@@ -103,6 +103,20 @@
                 btn.textContent = '☀';
             }
         }
+        function scrollTo() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        window.addEventListener('scroll', function() {
+            const btn = document.querySelector('.back-to-top');
+            if (window.scrollY > 200) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
     </script>
 </body>
 </html>
