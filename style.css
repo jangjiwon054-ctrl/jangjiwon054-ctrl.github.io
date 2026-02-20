@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>장지원 자기소개 홈페이지</title>
-
-    <style>
-        * {
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -47,6 +40,13 @@ body {
     padding: 24px 24px 20px;
     margin-bottom: 16px;
     border: 1px solid #e5e7eb;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.section-card:hover,
+.profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.1);
 }
 .profile-card {
     display: grid;
@@ -129,6 +129,3 @@ body {
         padding: 20px 16px 18px;
     }
 }
-</style>
-</head>
-</html>
