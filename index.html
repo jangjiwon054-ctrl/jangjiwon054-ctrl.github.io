@@ -90,7 +90,9 @@
         </footer>
     </main>
 
-    <button class="back-to-top" onclick="scrollTo();"></button>
+    <button class="back-to-top" onclick="scrollToTop();">↾</button>
+
+    <button class="dark-toggle" onclick="toggleDark();">☀</button>
 
     <script>
         function toggleDark() {
@@ -103,8 +105,8 @@
                 btn.textContent = '☀';
             }
         }
-        function scrollTo() {
-            window.scrollTo({
+        function scrollToTop() {
+            window.scrollToTop({
                 top: 0,
                 behavior: 'smooth'
             });

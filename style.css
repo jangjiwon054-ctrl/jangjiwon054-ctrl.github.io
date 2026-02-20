@@ -154,10 +154,6 @@ body {
 
     position: fixed;
 }
-.dark-toggle span {
-    position: absolute;
-    transition: all 0.4s ease;
-}
 .dark-toggle:hover {
     transform: translateY(-4px) scale(1.05);
     background-color: #FFA500;
